@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <div id="toast" class="toast"></div>
 
     <header class="cabecalho">
         <ul style="display: flex; flex-direction: row; margin: 0px; height: 100%; align-items: center; padding: unset;">
@@ -27,7 +28,7 @@
                     abaixo.</span>
             </div>
 
-            <form action="/contatar" method="post">
+            <form id="contato" method="post">
                 <div class="parent">
 
 
@@ -40,20 +41,19 @@
                     <input class="div3" type="email" id="email" name="email" placeholder="E-mail" required>
 
 
-                    <input class="div4" type="number" id="numero" name="numero" placeholder="Número de telefone"
-                        required>
+                    <input class="div4" type="text" id="numero" name="numero" placeholder="Número de telefone" required>
 
                     <textarea class="div5" id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."
                         required></textarea>
 
-                    <button class="div6" style="font-size: 17px; width: 100%;">Enviar</button>
-
+                    <button class="div6" type="submit" id="enviar" style="font-size: 17px; width: 100%;">Enviar</button>
 
                 </div>
             </form>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

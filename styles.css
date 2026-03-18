@@ -215,7 +215,7 @@ input::placeholder {
     width: 700px;
 }
 
-/*menu*/
+
 .cabecalho {
     background-color: #E0E3E8;
     display: flex;
@@ -245,4 +245,31 @@ li {
 a {
     text-decoration: none;
     color: unset;
+}
+
+.toast {
+    width: 250px;
+    padding: 14px;
+    border-radius: 20px;
+    position: fixed;
+    top: 23px;
+    right: 30px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid rgb(44, 132, 44);
+    background-color: rgb(87, 251, 87);
+}
+
+.toast.ativo {
+    opacity: 1 !important;
+    visibility: visible;
+    top: 40px;
+}
+
+.erro {
+    border: 1px solid rgb(132, 44, 44) !important;
+    background-color: rgb(251, 87, 87) !important;
+
 }
