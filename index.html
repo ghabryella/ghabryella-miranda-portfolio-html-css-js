@@ -3,48 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Portifólio Pessoal - Ghabryella</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portifólio Pessoal</title>
+    <link rel="stylesheet" href="styles.css"> <!--link para o arquivo CSS-->
 </head>
 
 <body>
 
+    <!--cabeçalho com menu de navegação-->
     <header class="cabecalho">
+
+        <!--lista não ordenada com os itens do menu de navegação-->
         <ul style="display: flex; flex-direction: row; margin: 0px; height: 100%; align-items: center; padding: unset;">
-            <li class=" menu-item-clicado-modo-claro"><a href="index.html">SOBRE MIM</a></li>
+            <li class=" menu-item-clicado-modo-claro"><a href="index.html">SOBRE MIM</a></li> <!--item ativo do menu de navegação-->
             <li><a href="formacao.html">FORMAÇÃO</a></li>
             <li> <a href="portifolio.html">PORTIFÓLIO</a></li>
             <li><a href="contato.html">CONTATO</a></li>
         </ul>
+
     </header>
 
+    <!--container principal onde contém todo o conteúdo da página-->
     <div class="container-principal">
-        <h1 style="font-size: 50px; margin-top: 0;">Ghabryella Miranda dos Santos</h1>
-        <h2 style="font-size: 30px; margin-top: -10px;">Futura Desenvolvedora de Software </h2>
-        <div class="display-row">
-            <div class="largura-apresentacao">
+
+        <h1 style="font-size: 50px; margin-top: 0;">Ghabryella Miranda dos Santos</h1> <!--título principal-->
+
+        <h2 style="font-size: 30px; margin-top: -10px;">Futura Desenvolvedora de Software </h2> <!--subtítulo-->
+
+        <div class="display-row"> <!-- div com display flex para alinhar texto e imagem lado a lado-->
+
+            <div class="largura-apresentacao"> <!--div com o texto da apresentação-->
+
                 <p style="margin-top: -2px;">Sou gaúcha, tenho 21 anos, sou estudante de Análise e Desenvolvimento de
-                    Sistemas, com formação
-                    técnica em Administração.</p>
+                    Sistemas, com formação técnica em Administração.</p>
+
                 <p>Sou uma pessoa tranquila, bastante curiosa e muito apaixonada por animais!</p>
 
                 <p>Escolhi a área de tecnologia porque é um campo que está sempre evoluindo, onde sempre surge uma nova
-                    tecnologia
-                    para aprender.</p>
+                    tecnologia para aprender.</p>
 
                 <p>Estou no início da minha carreira como desenvolvedora, buscando evoluir por meio de estudos e
-                    projetos
-                    práticos.</p>
+                    projetos práticos.</p>
+
             </div>
-            <img class="tamanho-foto-sobre-mim" src="asset/sobre_mim.png" alt="Imagem pessoal">
+
+            <!--minha imagem pessoal com inline definindo o tamanho-->
+            <img style="height: 250px;" src="asset/sobre_mim.png" alt="Imagem pessoal">
 
         </div>
-        <h3 style="margin-top: -3px;" class="h3-roxo">Interesses e Hobbies</h3>
-        <div class="display-row espacamento-interesses">
+
+
+        <h3 style="margin-top: -3px;" class="h3-roxo">Interesses e Hobbies</h3> <!--seção de interesses e hobbies-->
+
+        <div class="display-row espacamento-interesses"> <!--div para organizar os interesses em linha-->
+
+            <!--cada div é um retangulo com o interesse dentro-->
             <div class="retangulo-interesses">Viagens</div>
             <div class="retangulo-interesses">Música</div>
             <div class="retangulo-interesses">Musculação</div>
+
         </div>
+
     </div>
 
 </body>

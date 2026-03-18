@@ -3,49 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Portifólio Pessoal - Ghabryella</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portifólio Pessoal</title>
+    <link rel="stylesheet" href="styles.css"> <!--link para o arquivo CSS-->
 </head>
 
 <body>
+
+    <!--toast para exibir notificações temporárias (mensagens de sucesso/erro)-->
     <div id="toast" class="toast"></div>
 
+
+    <!--cabeçalho com menu de navegação-->
     <header class="cabecalho">
+
+        <!--lista não ordenada com os itens do menu de navegação-->
         <ul style="display: flex; flex-direction: row; margin: 0px; height: 100%; align-items: center; padding: unset;">
             <li><a href="index.html">SOBRE MIM</a></li>
             <li><a href="formacao.html">FORMAÇÃO</a></li>
             <li> <a href="portifolio.html">PORTIFÓLIO</a></li>
-            <li class=" menu-item-clicado-modo-claro"><a href="contato.html">CONTATO</a></li>
+            <li class=" menu-item-clicado-modo-claro"><a href="contato.html">CONTATO</a></li> <!--item ativo do menu de navegação-->
         </ul>
+
     </header>
 
+    <!--container principal da página de contato-->
     <div>
+        <!--retângulo que contém o formulário de contato-->
         <div class="retangulo-contato">
 
             <div class="centralizar-titulo-contato">
-                <span style="font-size: 40px; font-weight: 450">Entre em contato</span>
+                <span style="font-size: 40px; font-weight: 450">Entre em contato</span> <!--título principal-->
                 <span style="font-size: 20px; margin-bottom: 5px; margin-top: 10px;">Envie sua mensagem pelo formulário
-                    abaixo.</span>
+                    abaixo.</span> <!--subtítulo-->
             </div>
 
+            <!--formulário de contato com método post-->
             <form id="contato" method="post">
-                <div class="parent">
 
+                <!--container com grid layout para organizar os campos-->
+                <div class="parent"> 
 
+                    <!--campo nome-->
                     <input class="div1" type="text" id="nome" name="nome" placeholder="Nome" required>
 
-
+                    <!--campo sobrenome-->
                     <input class="div2" type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
 
-
+                    <!--campo email-->
                     <input class="div3" type="email" id="email" name="email" placeholder="E-mail" required>
 
-
+                    <!--campo telefone-->
                     <input class="div4" type="text" id="numero" name="numero" placeholder="Número de telefone" required>
 
+                    <!--campo mensagem-->
                     <textarea class="div5" id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."
                         required></textarea>
 
+                    <!--botão de envio do formulário-->
                     <button class="div6" type="submit" id="enviar" style="font-size: 17px; width: 100%;">Enviar</button>
 
                 </div>
@@ -53,7 +67,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!--script js para funcionalidades da página-->
 </body>
 
 </html>

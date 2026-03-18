@@ -15,10 +15,6 @@ header {
     flex-direction: row;
 }
 
-.tamanho-foto-sobre-mim {
-    height: 250px;
-}
-
 .retangulo-interesses {
     padding-top: 4px;
     padding-bottom: 4px;
