@@ -13,12 +13,16 @@ formulario.addEventListener('submit', function (event) {
     };
 
     if (!campos.nome || !campos.email || !campos.telefone || !campos.mensagem) {
+        return;
+    }
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(campos.email)) {
+        exibirToast("E-mail inválido. Use o formato: usuario@dominio.com", "erro");
         return;
     }
 
     const telefoneRegex = /^\d{11}$/;
-
     if (!telefoneRegex.test(campos.telefone)) {
         exibirToast("O telefone deve conter exatamente 11 números (apenas números)", "erro");
         return;
@@ -26,7 +30,7 @@ formulario.addEventListener('submit', function (event) {
 
     console.log(campos);
     exibirToast("Mensagem enviada com sucesso!", "Sucesso")
-
+    formulario.reset();
 });
 
 function exibirToast(texto, tipo) {
