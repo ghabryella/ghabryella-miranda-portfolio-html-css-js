@@ -9,63 +9,67 @@
 
 <body>
 
-    <!--cabeçalho com menu de navegação-->
-    <header class="cabecalho">
+<!--cabeçalho com menu de navegação-->
+<header class="cabecalho">
 
-        <!--lista não ordenada com os itens do menu de navegação-->
-        <ul style="display: flex; flex-direction: row; margin: 0px; height: 100%; align-items: center; padding: unset;">
-            <li class=" menu-item-clicado-modo-claro"><a href="index.html">SOBRE MIM</a></li>
-            <!--item ativo do menu de navegação-->
-            <li><a href="formacao.html">FORMAÇÃO</a></li>
-            <li> <a href="portifolio.html">PORTIFÓLIO</a></li>
-            <li><a href="contato.html">CONTATO</a></li>
-        </ul>
+    <!--lista não ordenada com os itens do menu de navegação-->
+    <ul style="display: flex; flex-direction: row; margin: 0px; height: 100%; align-items: center; padding: unset;">
+        <li class=" menu-item-clicado-modo-claro"><a href="index.html">SOBRE MIM</a></li>
+        <!--item ativo do menu de navegação-->
+        <li><a href="formacao.html">FORMAÇÃO</a></li>
+        <li><a href="portifolio.html">PORTIFÓLIO</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+    </ul>
 
-    </header>
+    <span id="botao" class="botao-inverter-modo">☾</span>
 
-    <!--container principal onde contém todo o conteúdo da página-->
-    <div class="container-principal">
 
-        <h1 style="font-size: 50px; margin-top: 0;">Ghabryella Miranda dos Santos</h1> <!--título principal-->
+</header>
 
-        <h2 style="font-size: 30px; margin-top: -10px;">Futura Desenvolvedora de Software </h2> <!--subtítulo-->
+<!--container principal onde contém todo o conteúdo da página-->
+<div class="container-principal">
 
-        <div class="display-row"> <!-- div com display flex para alinhar texto e imagem lado a lado-->
+    <h1 style="font-size: 50px; margin-top: 0;">Ghabryella Miranda dos Santos</h1> <!--título principal-->
 
-            <div class="largura-apresentacao"> <!--div com o texto da apresentação-->
+    <h2 style="font-size: 30px; margin-top: -10px;">Futura Desenvolvedora de Software </h2> <!--subtítulo-->
 
-                <p style="margin-top: -2px;">Sou gaúcha, tenho 21 anos, sou estudante de Análise e Desenvolvimento de
-                    Sistemas, com formação técnica em Administração.</p>
+    <div class="display-row"> <!-- div com display flex para alinhar texto e imagem lado a lado-->
 
-                <p>Sou uma pessoa tranquila, bastante curiosa e muito apaixonada por animais!</p>
+        <div class="largura-apresentacao"> <!--div com o texto da apresentação-->
 
-                <p>Escolhi a área de tecnologia porque é um campo que está sempre evoluindo, onde sempre surge uma nova
-                    tecnologia para aprender.</p>
+            <p style="margin-top: -2px;">Sou gaúcha, tenho 21 anos, sou estudante de Análise e Desenvolvimento de
+                Sistemas, com formação técnica em Administração.</p>
 
-                <p>Estou no início da minha carreira como desenvolvedora, buscando evoluir por meio de estudos e
-                    projetos práticos.</p>
+            <p>Sou uma pessoa tranquila, bastante curiosa e muito apaixonada por animais!</p>
 
-            </div>
+            <p>Escolhi a área de tecnologia porque é um campo que está sempre evoluindo, onde sempre surge uma nova
+                tecnologia para aprender.</p>
 
-            <!--minha imagem pessoal com inline definindo o tamanho-->
-            <img style="height: 250px;" src="asset/sobre_mim.png" alt="Imagem pessoal">
+            <p>Estou no início da minha carreira como desenvolvedora, buscando evoluir por meio de estudos e
+                projetos práticos.</p>
 
         </div>
 
-
-        <h3 style="margin-top: -3px;" class="h3-roxo">Interesses e Hobbies</h3> <!--seção de interesses e hobbies-->
-
-        <div class="display-row espacamento-interesses"> <!--div para organizar os interesses em linha-->
-
-            <!--cada div é um retangulo com o interesse dentro-->
-            <div class="retangulo-interesses">Viagens</div>
-            <div class="retangulo-interesses">Música</div>
-            <div class="retangulo-interesses">Musculação</div>
-
-        </div>
+        <!--minha imagem pessoal com inline definindo o tamanho-->
+        <img style="height: 250px;" src="asset/sobre_mim.png" alt="Imagem pessoal">
 
     </div>
 
+
+    <h3 style="margin-top: -3px;" class="h3-roxo">Interesses e Hobbies</h3> <!--seção de interesses e hobbies-->
+
+    <div class="display-row espacamento-interesses"> <!--div para organizar os interesses em linha-->
+
+        <!--cada div é um retangulo com o interesse dentro-->
+        <div class="retangulo-interesses">Viagens</div>
+        <div class="retangulo-interesses">Música</div>
+        <div class="retangulo-interesses">Musculação</div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script> <!--script js para funcionalidades da página-->
 </body>
 
 </html>
