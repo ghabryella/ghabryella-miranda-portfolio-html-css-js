@@ -9,27 +9,26 @@
 
 <body>
 
-    <!--toast para exibir notificações temporárias (mensagens de sucesso/erro)-->
-    <div id="toast" class="toast"></div>
+    <!--toast para exibir mensagens  temporárias de sucesso ou erro ao enviar formulario-->
+    <div id="toast" class="toast">asd</div>
 
 
-    <!--cabeçalho com menu de navegação-->
+    <!--menu de navegação-->
     <header class="cabecalho">
 
         <!--lista não ordenada com os itens do menu de navegação-->
         <ul style="display: flex; flex-direction: row; margin: 0px; height: 100%; align-items: center; padding: unset;">
             <li><a href="index.html">SOBRE MIM</a></li>
             <li><a href="formacao.html">FORMAÇÃO</a></li>
-            <li> <a href="portifolio.html">PORTIFÓLIO</a></li>
-            <li class=" menu-item-clicado-modo-claro"><a href="contato.html">CONTATO</a></li>
-            <!--item ativo do menu de navegação-->
+            <li> <a href="portfolio.html">PORTFÓLIO</a></li>
+            <li class=" menu-item-clicado-modo-claro"><a href="contato.html">CONTATO</a></li> <!--item ativo do menu de navegação-->
         </ul>
 
         <span id="botao" class="botao-inverter-modo">☾</span>
+        <!--botão que alterna entre modo escuro e claro-->
 
     </header>
 
-    <!--container principal da página de contato-->
     <div>
         <!--retângulo que contém o formulário de contato-->
         <div class="retangulo-contato">
@@ -40,30 +39,30 @@
                     abaixo.</span> <!--subtítulo-->
             </div>
 
-            <!--formulário de contato com método post-->
+            <!--formulário com validação via js antes do envio-->
             <form id="contato" method="post">
 
-                <!--container com grid layout para organizar os campos-->
+                <!--grid layout para organizar os campos em duas colunas-->
                 <div class="parent">
 
                     <!--campo nome-->
-                    <input class="div1" type="text" id="nome" name="nome" placeholder="Nome" required>
+                    <input class="campo-nome" type="text" id="nome" name="nome" placeholder="Nome" required>
 
                     <!--campo sobrenome-->
-                    <input class="div2" type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                    <input class="campo-sobrenome" type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
 
                     <!--campo email-->
-                    <input class="div3" type="email" id="email" name="email" placeholder="E-mail" required>
+                    <input class="campo-email" type="email" id="email" name="email" placeholder="E-mail" required>
 
                     <!--campo telefone-->
-                    <input class="div4" type="text" id="numero" name="numero" placeholder="Número de telefone" required>
+                    <input class="campo-numero" type="text" id="numero" name="numero" placeholder="Número de telefone" required>
 
                     <!--campo mensagem-->
-                    <textarea class="div5" id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."
+                    <textarea class="campo-mensagem" id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."
                         required></textarea>
 
                     <!--botão de envio do formulário-->
-                    <button class="div6" type="submit" id="enviar" style="font-size: 17px; width: 100%;">Enviar</button>
+                    <button class="campo-botao" type="submit" id="enviar" style="font-size: 17px; width: 100%;">Enviar</button>
 
                 </div>
             </form>

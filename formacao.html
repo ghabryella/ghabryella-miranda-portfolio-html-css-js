@@ -9,26 +9,26 @@
 
 <body>
 
-<!--cabeçalho com menu de navegação-->
+<!--menu de navegação-->
 <header class="cabecalho">
 
     <!--lista não ordenada com os itens do menu de navegação-->
     <ul style="display: flex; flex-direction: row; margin: 0px; height: 100%; align-items: center; padding: unset;">
         <li><a href="index.html">SOBRE MIM</a></li>
-        <li class=" menu-item-clicado-modo-claro"><a href="formacao.html">FORMAÇÃO</a></li>
-        <!--item ativo do menu de navegação-->
-        <li><a href="portifolio.html">PORTIFÓLIO</a></li>
+        <li class=" menu-item-clicado-modo-claro"><a href="formacao.html">FORMAÇÃO</a></li> <!--item ativo do menu de navegação-->
+        <li><a href="portfolio.html">PORTFÓLIO</a></li>
         <li><a href="contato.html">CONTATO</a></li>
     </ul>
 
     <span id="botao" class="botao-inverter-modo">☾</span>
+    <!--botão que alterna entre modo escuro e claro-->
 
 </header>
 
 <!--container formação onde contém todo o conteúdo da página-->
 <div class="container-formacao">
 
-    <!--coluna da esquerda (ensino superior, técnico e idiomas)-->
+    <!--coluna da esquerda: ensino superior, técnico e idiomas-->
     <div style="width: 50%;">
 
         <!--tabela do ensino superior-->
@@ -36,16 +36,15 @@
             <tr>
                 <td></td>
                 <td>
-                    <h3 style="margin-top: 0;" class="h3-roxo">Ensino Superior</h3> <!--título da tabela-->
+                    <h3 style="margin-top: 0;" class="h3-roxo">Ensino Superior</h3> 
                 </td>
             </tr>
             <tr>
                 <td style="display: unset;">
 
-                    <img style="height: 30px; margin-right: 10px; margin-top: 10px;"
-                         src="asset/icone_ensino_superior_claro.svg" alt="ícone Ensino Superior">
+                    <img style="height: 30px; margin-right: 10px; margin-top: 3px;"
+                         src="img/icone_ensino_superior_claro.svg" alt="ícone Ensino Superior">
                 </td>
-                <!--ícone do ensino superior-->
 
                 <!--conteúdo com informações do curso-->
                 <td><strong style="font-size: 20px; margin-right: 50px;">Análise e Desenvolvimento de Sistemas -
@@ -61,13 +60,12 @@
             <tr>
                 <td></td>
                 <td>
-                    <h3 class="h3-roxo">Ensino Técnico</h3> <!--título da tabela-->
+                    <h3 class="h3-roxo">Ensino Técnico</h3>
                 </td>
             </tr>
             <tr>
                 <td><img style="height: 30px; margin-right: 10px; position: relative; top: -22px;"
-                         src="asset/icone_curso_tecnico_claro.svg" alt="ícone Ensino Técnico"></td>
-                <!--ícone do ensino técnico-->
+                         src="img/icone_curso_tecnico_claro.svg" alt="ícone Ensino Técnico"></td>
 
                 <!--conteúdo com informações do curso-->
                 <td><strong style="font-size: 20px;">Técnico em Administração - E.E.E.M Bento Gonçalves</strong>
@@ -85,22 +83,22 @@
 
     </div>
 
-    <!-- coluna da direita (cursos complementares)-->
+    <!-- coluna da direita: cursos complementares-->
     <div style="width: 50% ;">
-        <h3 style="margin-top: 0;" class="h3-roxo">Cursos</h3> <!--título-->
+        <h3 style="margin-top: 0;" class="h3-roxo">Cursos</h3>
 
 
         <div class="gap-retangulo-cursos"> <!--container com gap entre os retângulos de cursos-->
 
-            <!--primeiro curso (java)-->
+            <!--primeiro curso: java-->
             <div class="retangulo-cursos">
 
-                <div id="pai-da-imagem-e-do-titulo" class="display-row afastar-titulo-imagem ">
+                <div class="display-row afastar-titulo-imagem ">
                     <!--div para agrupar imagem e título-->
 
-                    <img style="height: 85px;" src="asset/icone_java_claro.svg" alt="Ícone Java">
+                    <img style="height: 85px;" src="img/icone_java_claro.svg" alt="Ícone Java">
 
-                    <div id="pai-dos-titulos" class="centralizar-texto-imagem">
+                    <div class="centralizar-texto-imagem">
                         <!--div para agrupar título e status do curso-->
                         <strong style="font-size: 20px;">Java - Programação Orientada a Objetos - Udemy</strong>
                         <span style="font-size: 20px;">Em andamento</span>
@@ -109,7 +107,7 @@
                 </div>
 
 
-                <!--cconteúdo do curso com texto roxo-->
+                <!--conteúdo do curso com texto roxo-->
                 <div class="roxo-modo-claro" style="font-size: 15px;">
                     <strong>Conteúdo: </strong> Lógica de
                     Programação e Algoritmos, Sintaxe, POO, Generics, Programação Funcional e Expressões Lambda,
@@ -118,16 +116,16 @@
 
             </div>
 
-            <!--segundo curso (lógica de programação)-->
+            <!--segundo curso: lógica de programação-->
             <div class="retangulo-cursos">
 
-                <div id="pai da imagem e do titulo" class="display-row afastar-titulo-imagem ">
+                <div class="display-row afastar-titulo-imagem ">
                     <!--div para agrupar imagem e título-->
 
-                    <img style="height: 80px;" src="asset/icone_logica_de_programacao_claro.svg"
+                    <img style="height: 80px;" src="img/icone_logica_de_programacao_claro.svg"
                          alt="Ícone Lógica de Programação">
 
-                    <div id="pai dos titulos" class="centralizar-texto-imagem">
+                    <div class="centralizar-texto-imagem">
                         <!--div para agrupar título e status do curso-->
                         <strong style="font-size: 20px;"> Algoritmos e Lógica de Programação - Udemy</strong>
                         <span style="font-size: 20px;">Concluído em 2025</span>
@@ -135,7 +133,7 @@
 
                 </div>
 
-                <!--cconteúdo do curso com texto roxo-->
+                <!--conteúdo do curso com texto roxo-->
                 <div class="roxo-modo-claro" style="font-size: 15px;">
                     <strong>Conteúdo: </strong> Conteúdo: Variáveis, Entrada/Saída, Condicionais, Laços, Vetores,
                     Matrizes,

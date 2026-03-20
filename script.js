@@ -3,7 +3,7 @@ const toast = document.getElementById('toast');
 let toastTimer;
 const estiloPrincipal = document.documentElement;
 
-
+// cores do tema claro
 const coresClaras = {
     cor_fundo: "white",
     cor_texto: "black",
@@ -12,8 +12,10 @@ const coresClaras = {
     roxo_2: "#603773",
     roxo_3: "#947CA2",
     fundo_contato: "white",
+    sombra_contato: "0px 0px 13px rgba(0, 0, 0, 1)",
 };
 
+// cores do tema escuro
 const coresEscuras = {
     cor_fundo: "black",
     cor_texto: "white",
@@ -21,16 +23,18 @@ const coresEscuras = {
     item_clicado: "#35393C",
     roxo_2: "#9B7CB7",
     roxo_3: "#6A587E",
-    fundo_contato: "#222629"
+    fundo_contato: "#222629",
+    sombra_contato: "0px 0px 13px rgba(255, 255, 255,1)",
 };
-let button = document.getElementById("botao");
+let botaoTema = document.getElementById("botao");
 
+// função que aplica o tema salvo no localStorage ao carregar a página
 function aplicarModoSalvo() {
     let modo = localStorage.getItem('modoClaro') || "ativo";
     let modoClaro = modo === "ativo";
 
     if (modoClaro) {
-        button.innerText = "☾";
+        botaoTema.innerText = "☾";
 
         estiloPrincipal.style.setProperty("--cor-fundo", coresClaras.cor_fundo);
         estiloPrincipal.style.setProperty("--cor-texto", coresClaras.cor_texto);
@@ -39,9 +43,10 @@ function aplicarModoSalvo() {
         estiloPrincipal.style.setProperty("--roxo-2", coresClaras.roxo_2);
         estiloPrincipal.style.setProperty("--roxo-3", coresClaras.roxo_3);
         estiloPrincipal.style.setProperty("--fundo-contato", coresClaras.fundo_contato);
+       estiloPrincipal.style.setProperty("--sombra-contato", coresClaras.sombra_contato);
 
     } else {
-        button.innerText = "☼";
+        botaoTema.innerText = "☼";
 
         estiloPrincipal.style.setProperty("--cor-fundo", coresEscuras.cor_fundo);
         estiloPrincipal.style.setProperty("--cor-texto", coresEscuras.cor_texto);
@@ -50,14 +55,15 @@ function aplicarModoSalvo() {
         estiloPrincipal.style.setProperty("--roxo-2", coresEscuras.roxo_2);
         estiloPrincipal.style.setProperty("--roxo-3", coresEscuras.roxo_3);
         estiloPrincipal.style.setProperty("--fundo-contato", coresEscuras.fundo_contato);
+        estiloPrincipal.style.setProperty("--sombra-contato", coresEscuras.sombra_contato);
     }
 }
 
-// chama assim que carregar
+
 aplicarModoSalvo();
 
-
-button.addEventListener("click", function () {
+// alterna entre tema claro e escuro ao clicar no botão
+botaoTema.addEventListener("click", function () {
     let modo = localStorage.getItem('modoClaro') || "ativo";
 
     if (modo === "ativo") {
@@ -69,6 +75,7 @@ button.addEventListener("click", function () {
     aplicarModoSalvo();
 });
 
+// validação e simulação do envio do formulário
 if (formulario) {
     formulario.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -80,32 +87,36 @@ if (formulario) {
             mensagem: document.getElementById('mensagem').value.trim()
         };
 
+        // verifica se todos os campos estão preenchidos
         if (!campos.nome || !campos.email || !campos.telefone || !campos.mensagem) {
             return;
         }
 
+        // validação do formato do email
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(campos.email)) {
             exibirToast("E-mail inválido. Use o formato: usuario@dominio.com", "erro");
             return;
         }
 
+        // validação do número de telefone
         const telefoneRegex = /^\d{11}$/;
         if (!telefoneRegex.test(campos.telefone)) {
-            exibirToast("O telefone deve conter exatamente 11 números (apenas números)", "erro");
+            exibirToast("Digite um telefone válido com 11 dígitos (apenas números).", "erro");
             return;
         }
 
+        // simulação de envio bem sucedido
         console.log(campos);
         exibirToast("Mensagem enviada com sucesso!", "Sucesso")
         formulario.reset();
     });
 }
 
+// exibe notificação temporária (toast)
 function exibirToast(texto, tipo) {
     toast.classList = ["toast"]
     if (tipo == "erro") {
-        toast.classList.remove("sucesso")
         toast.classList.add("erro")
     }
 
