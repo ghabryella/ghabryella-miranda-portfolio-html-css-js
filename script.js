@@ -93,7 +93,7 @@ if (formulario) {
         }
 
         // validação do formato do email
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!emailRegex.test(campos.email)) {
             exibirToast("E-mail inválido. Use o formato: usuario@dominio.com", "erro");
             return;
