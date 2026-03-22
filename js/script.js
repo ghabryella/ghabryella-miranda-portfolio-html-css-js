@@ -43,7 +43,7 @@ function aplicarModoSalvo() {
         estiloPrincipal.style.setProperty("--roxo-2", coresClaras.roxo_2);
         estiloPrincipal.style.setProperty("--roxo-3", coresClaras.roxo_3);
         estiloPrincipal.style.setProperty("--fundo-contato", coresClaras.fundo_contato);
-       estiloPrincipal.style.setProperty("--sombra-contato", coresClaras.sombra_contato);
+        estiloPrincipal.style.setProperty("--sombra-contato", coresClaras.sombra_contato);
 
     } else {
         botaoTema.innerText = "☼";
@@ -95,7 +95,7 @@ if (formulario) {
         // validação do formato do email
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!emailRegex.test(campos.email)) {
-            exibirToast("E-mail inválido. Use o formato: usuario@dominio.com", "erro");
+            exibirToast("E-mail inválido. Use o formato: usuario@dominsio.com", "erro");
             return;
         }
 
